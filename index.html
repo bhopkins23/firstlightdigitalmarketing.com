@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Marketing Bucks County | Search Engine Marketing Agency | First Light Marketing</title>
+    <meta name="description" content="First Light Marketing is the best SEO company in Bucks County offering search engine marketing services, SEO marketing, and local SEO from Newtown, PA. Get results today.">
+    <meta name="keywords" content="search engine marketing bucks county, seo marketing bucks county, search engine marketing agency bucks county, seo services company bucks county, search engine marketing companies bucks county, best seo company bucks county">
+    <link rel="canonical" href="https://www.firstlightdigitalmarketing.com/">
+    <meta property="og:title" content="Best SEO Company Bucks County | Search Engine Marketing Agency">
+    <meta property="og:description" content="First Light Marketing — Bucks County's top-rated SEO and search engine marketing agency based in Newtown, PA. Driving measurable results for local businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.firstlightdigitalmarketing.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --navy: #0B1D3A;
+            --navy-light: #132B52;
+            --blue: #2563EB;
+            --blue-light: #3B82F6;
+            --sky: #E8F1FD;
+            --gold: #D4A853;
+            --gold-light: #E8C97A;
+            --white: #FFFFFF;
+            --gray-50: #F9FAFB;
+            --gray-100: #F3F4F6;
+            --gray-200: #E5E7EB;
+            --gray-400: #9CA3AF;
+            --gray-500: #6B7280;
+            --gray-600: #4B5563;
+            --gray-700: #374151;
+            --gray-800: #1F2937;
+            --gray-900: #111827;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+            --shadow-xl: 0 20px 50px -12px rgba(0,0,0,0.15);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-800);
+            line-height: 1.6;
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 { line-height: 1.2; color: var(--navy); }
+        h1 { font-family: 'Playfair Display', serif; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* ===== NAVIGATION ===== */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            transition: var(--transition);
+        }
+        .nav.scrolled { box-shadow: var(--shadow-md); }
+        .nav-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 72px; max-width: 1200px; margin: 0 auto; padding: 0 24px;
+        }
+        .nav-logo {
+            display: flex; align-items: center; gap: 12px;
+            font-weight: 700; font-size: 1.1rem; color: var(--navy);
+        }
+        .nav-logo svg { width: 40px; height: 40px; }
+        .nav-logo span { letter-spacing: -0.02em; }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a {
+            font-size: 0.9rem; font-weight: 500; color: var(--gray-600);
+            transition: var(--transition); position: relative;
+        }
+        .nav-links a:hover { color: var(--navy); }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+            background: var(--blue); transition: var(--transition); border-radius: 1px;
+        }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta {
+            background: var(--blue); color: white !important; padding: 10px 24px;
+            border-radius: 8px; font-weight: 600; font-size: 0.88rem;
+            transition: var(--transition); border: none; cursor: pointer;
+        }
+        .nav-cta:hover { background: var(--navy); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .nav-cta::after { display: none !important; }
+
+        .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+        .mobile-toggle span {
+            display: block; width: 24px; height: 2px; background: var(--navy);
+            margin: 5px 0; transition: var(--transition); border-radius: 2px;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: 140px 0 100px;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, #1a3a6b 100%);
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; right: -20%; width: 800px; height: 800px;
+            background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero::after {
+            content: ''; position: absolute; bottom: -30%; left: -10%; width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(212,168,83,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-inner {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+            align-items: center; position: relative; z-index: 1;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+            padding: 8px 16px; border-radius: 50px; margin-bottom: 24px;
+            font-size: 0.85rem; color: var(--gold-light); font-weight: 500;
+        }
+        .hero-badge svg { width: 16px; height: 16px; }
+        .hero h1 {
+            font-size: 3.2rem; color: var(--white); margin-bottom: 20px;
+            letter-spacing: -0.02em; font-weight: 700;
+        }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero p {
+            font-size: 1.15rem; color: rgba(255,255,255,0.75); margin-bottom: 36px;
+            line-height: 1.7; max-width: 520px;
+        }
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--gold); color: var(--navy); padding: 16px 32px;
+            border-radius: 10px; font-weight: 700; font-size: 0.95rem;
+            transition: var(--transition); border: none; cursor: pointer;
+            letter-spacing: 0.01em;
+        }
+        .btn-primary:hover {
+            background: var(--gold-light); transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212,168,83,0.35);
+        }
+        .btn-secondary {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: transparent; color: white; padding: 16px 32px;
+            border-radius: 10px; font-weight: 600; font-size: 0.95rem;
+            border: 1.5px solid rgba(255,255,255,0.3); transition: var(--transition);
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5);
+            transform: translateY(-2px);
+        }
+
+        .hero-visual {
+            display: flex; flex-direction: column; gap: 16px;
+        }
+        .hero-stat-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+        }
+        .hero-stat {
+            background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius);
+            padding: 24px; text-align: center; transition: var(--transition);
+        }
+        .hero-stat:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
+        .hero-stat .number {
+            font-size: 2.2rem; font-weight: 800; color: var(--gold);
+            display: block; line-height: 1;
+        }
+        .hero-stat .label {
+            font-size: 0.82rem; color: rgba(255,255,255,0.65); margin-top: 8px;
+            font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;
+        }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar {
+            background: var(--white); border-bottom: 1px solid var(--gray-100);
+            padding: 28px 0;
+        }
+        .trust-inner {
+            display: flex; align-items: center; justify-content: center;
+            gap: 48px; flex-wrap: wrap;
+        }
+        .trust-item {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 0.88rem; color: var(--gray-500); font-weight: 500;
+        }
+        .trust-item svg { width: 20px; height: 20px; color: var(--blue); flex-shrink: 0; }
+
+        /* ===== SECTION STYLES ===== */
+        .section { padding: 100px 0; }
+        .section-alt { background: var(--gray-50); }
+        .section-dark { background: var(--navy); }
+        .section-header {
+            text-align: center; max-width: 680px; margin: 0 auto 64px;
+        }
+        .section-label {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.1em; color: var(--blue); margin-bottom: 16px;
+        }
+        .section-label.gold { color: var(--gold); }
+        .section-header h2 {
+            font-size: 2.4rem; font-weight: 800; margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        .section-header p { font-size: 1.05rem; color: var(--gray-500); line-height: 1.7; }
+
+        /* ===== SERVICES ===== */
+        .services-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+        }
+        .service-card {
+            background: var(--white); border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg); padding: 40px 32px;
+            transition: var(--transition); position: relative; overflow: hidden;
+        }
+        .service-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, var(--blue), var(--gold));
+            opacity: 0; transition: var(--transition);
+        }
+        .service-card:hover {
+            transform: translateY(-4px); box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+        .service-card:hover::before { opacity: 1; }
+        .service-icon {
+            width: 56px; height: 56px; border-radius: 14px;
+            background: var(--sky); display: flex; align-items: center;
+            justify-content: center; margin-bottom: 24px; transition: var(--transition);
+        }
+        .service-card:hover .service-icon { background: var(--blue); }
+        .service-icon svg { width: 26px; height: 26px; color: var(--blue); transition: var(--transition); }
+        .service-card:hover .service-icon svg { color: white; }
+        .service-card h3 {
+            font-size: 1.2rem; font-weight: 700; margin-bottom: 12px;
+        }
+        .service-card p {
+            font-size: 0.92rem; color: var(--gray-500); line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .service-link {
+            display: inline-flex; align-items: center; gap: 6px;
+            font-size: 0.88rem; font-weight: 600; color: var(--blue);
+            transition: var(--transition);
+        }
+        .service-link:hover { gap: 10px; }
+        .service-link svg { width: 16px; height: 16px; }
+
+        /* ===== WHY US / FEATURES ===== */
+        .why-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+            align-items: center;
+        }
+        .why-content h2 {
+            font-size: 2.2rem; font-weight: 800; margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+        .why-content > p {
+            font-size: 1.02rem; color: var(--gray-500); margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .why-list { display: flex; flex-direction: column; gap: 24px; }
+        .why-item { display: flex; gap: 16px; }
+        .why-item-icon {
+            width: 44px; height: 44px; border-radius: 12px;
+            background: var(--sky); display: flex; align-items: center;
+            justify-content: center; flex-shrink: 0;
+        }
+        .why-item-icon svg { width: 22px; height: 22px; color: var(--blue); }
+        .why-item h4 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+        .why-item p { font-size: 0.9rem; color: var(--gray-500); line-height: 1.6; }
+
+        .why-visual {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            border-radius: var(--radius-lg); padding: 48px; position: relative;
+            overflow: hidden;
+        }
+        .why-visual::before {
+            content: ''; position: absolute; top: -30%; right: -20%;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(212,168,83,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .why-visual-item {
+            display: flex; align-items: center; gap: 16px;
+            padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+            position: relative; z-index: 1;
+        }
+        .why-visual-item:last-child { border-bottom: none; }
+        .why-visual-num {
+            font-size: 2rem; font-weight: 800; color: var(--gold);
+            min-width: 60px;
+        }
+        .why-visual-text h4 { color: white; font-size: 0.95rem; font-weight: 600; }
+        .why-visual-text p { color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+
+        /* ===== PROCESS ===== */
+        .process-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
+        }
+        .process-step {
+            text-align: center; position: relative;
+        }
+        .process-step::after {
+            content: ''; position: absolute; top: 36px; left: calc(50% + 40px);
+            width: calc(100% - 80px); height: 2px;
+            background: linear-gradient(90deg, var(--blue), var(--gray-200));
+            opacity: 0.3;
+        }
+        .process-step:last-child::after { display: none; }
+        .process-num {
+            width: 72px; height: 72px; border-radius: 50%;
+            background: var(--sky); display: flex; align-items: center;
+            justify-content: center; margin: 0 auto 20px;
+            font-size: 1.5rem; font-weight: 800; color: var(--blue);
+            border: 2px solid transparent; transition: var(--transition);
+        }
+        .process-step:hover .process-num {
+            background: var(--blue); color: white;
+            border-color: var(--blue); transform: scale(1.05);
+        }
+        .process-step h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+        .process-step p { font-size: 0.88rem; color: var(--gray-500); line-height: 1.6; }
+
+        /* ===== LOCATIONS ===== */
+        .locations-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+        }
+        .location-card {
+            display: flex; align-items: center; gap: 20px;
+            background: var(--white); border: 1px solid var(--gray-200);
+            border-radius: var(--radius); padding: 28px;
+            transition: var(--transition);
+        }
+        .location-card:hover {
+            box-shadow: var(--shadow-lg); border-color: transparent;
+            transform: translateY(-2px);
+        }
+        .location-card.featured {
+            grid-column: span 2; background: var(--navy); border-color: transparent;
+        }
+        .location-card.featured h3, .location-card.featured p { color: white; }
+        .location-card.featured p { color: rgba(255,255,255,0.7); }
+        .location-icon {
+            width: 52px; height: 52px; border-radius: 14px;
+            background: var(--sky); display: flex; align-items: center;
+            justify-content: center; flex-shrink: 0;
+        }
+        .location-card.featured .location-icon { background: rgba(255,255,255,0.1); }
+        .location-icon svg { width: 24px; height: 24px; color: var(--blue); }
+        .location-card.featured .location-icon svg { color: var(--gold); }
+        .location-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+        .location-card p { font-size: 0.88rem; color: var(--gray-500); line-height: 1.5; }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+        }
+        .testimonial-card {
+            background: var(--white); border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg); padding: 36px;
+            transition: var(--transition);
+        }
+        .testimonial-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+        .testimonial-stars { display: flex; gap: 4px; margin-bottom: 16px; }
+        .testimonial-stars svg { width: 18px; height: 18px; color: var(--gold); }
+        .testimonial-card blockquote {
+            font-size: 0.95rem; color: var(--gray-600); line-height: 1.7;
+            margin-bottom: 20px; font-style: italic;
+        }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar {
+            width: 44px; height: 44px; border-radius: 50%;
+            background: var(--sky); display: flex; align-items: center;
+            justify-content: center; font-weight: 700; color: var(--blue);
+            font-size: 1rem;
+        }
+        .testimonial-info .name { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
+        .testimonial-info .role { font-size: 0.82rem; color: var(--gray-400); }
+
+        /* ===== CTA ===== */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, #1a3a6b 100%);
+            position: relative; overflow: hidden;
+        }
+        .cta-section::before {
+            content: ''; position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%); width: 800px; height: 800px;
+            background: radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 60%);
+            border-radius: 50%;
+        }
+        .cta-inner {
+            text-align: center; max-width: 640px; margin: 0 auto;
+            position: relative; z-index: 1;
+        }
+        .cta-inner h2 {
+            font-size: 2.4rem; font-weight: 800; color: white;
+            margin-bottom: 16px; letter-spacing: -0.02em;
+        }
+        .cta-inner p {
+            font-size: 1.05rem; color: rgba(255,255,255,0.7);
+            margin-bottom: 36px; line-height: 1.7;
+        }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ===== CONTACT ===== */
+        .contact-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+        }
+        .contact-info h2 {
+            font-size: 2.2rem; font-weight: 800; margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        .contact-info > p {
+            font-size: 1.02rem; color: var(--gray-500); margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .contact-details { display: flex; flex-direction: column; gap: 20px; }
+        .contact-item { display: flex; align-items: flex-start; gap: 16px; }
+        .contact-item-icon {
+            width: 44px; height: 44px; border-radius: 12px;
+            background: var(--sky); display: flex; align-items: center;
+            justify-content: center; flex-shrink: 0;
+        }
+        .contact-item-icon svg { width: 20px; height: 20px; color: var(--blue); }
+        .contact-item h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 2px; }
+        .contact-item p { font-size: 0.92rem; color: var(--gray-500); }
+        .contact-item a { color: var(--blue); font-weight: 500; }
+
+        .contact-form {
+            background: var(--white); border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg); padding: 40px;
+            box-shadow: var(--shadow-lg);
+        }
+        .contact-form h3 {
+            font-size: 1.3rem; font-weight: 700; margin-bottom: 24px;
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block; font-size: 0.85rem; font-weight: 600;
+            color: var(--gray-700); margin-bottom: 6px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 12px 16px; border: 1.5px solid var(--gray-200);
+            border-radius: 10px; font-size: 0.92rem; font-family: inherit;
+            transition: var(--transition); background: var(--gray-50);
+            color: var(--gray-800);
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+            background: var(--white);
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .form-submit {
+            width: 100%; padding: 16px; background: var(--blue);
+            color: white; border: none; border-radius: 10px;
+            font-size: 0.95rem; font-weight: 700; cursor: pointer;
+            transition: var(--transition); font-family: inherit;
+        }
+        .form-submit:hover { background: var(--navy); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--gray-900); padding: 64px 0 32px;
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px; margin-bottom: 48px;
+        }
+        .footer-brand p {
+            font-size: 0.88rem; color: var(--gray-400);
+            line-height: 1.7; margin-top: 16px; max-width: 300px;
+        }
+        .footer h4 {
+            font-size: 0.85rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.08em; color: var(--white); margin-bottom: 20px;
+        }
+        .footer-links { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a {
+            font-size: 0.88rem; color: var(--gray-400); transition: var(--transition);
+        }
+        .footer-links a:hover { color: var(--white); }
+        .footer-bottom {
+            padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 16px;
+        }
+        .footer-bottom p { font-size: 0.82rem; color: var(--gray-500); }
+
+        /* ===== SCHEMA MARKUP (hidden) ===== */
+        .sr-only {
+            position: absolute; width: 1px; height: 1px;
+            padding: 0; margin: -1px; overflow: hidden;
+            clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 2.6rem; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-step::after { display: none; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .hero { padding: 120px 0 80px; }
+            .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+            .hero h1 { font-size: 2.2rem; }
+            .section { padding: 72px 0; }
+            .section-header h2 { font-size: 1.8rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .locations-grid { grid-template-columns: 1fr; }
+            .location-card.featured { grid-column: span 1; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .cta-inner h2 { font-size: 1.8rem; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .trust-inner { gap: 24px; }
+        }
+    </style>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "First Light Marketing",
+        "description": "First Light Marketing is a leading SEO services company and search engine marketing agency in Bucks County, PA. Specializing in local SEO, digital marketing, social media marketing, and search engine marketing for businesses in Newtown, PA and throughout Bucks County.",
+        "url": "https://www.firstlightdigitalmarketing.com",
+        "telephone": "",
+        "email": "info@firstlightdigitalmarketing.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main Street",
+            "addressLocality": "Newtown",
+            "addressRegion": "PA",
+            "postalCode": "18940",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.2290",
+            "longitude": "-74.9357"
+        },
+        "areaServed": [
+            { "@type": "City", "name": "Newtown", "containedInPlace": { "@type": "AdministrativeArea", "name": "Bucks County, PA" } },
+            { "@type": "City", "name": "Doylestown", "containedInPlace": { "@type": "AdministrativeArea", "name": "Bucks County, PA" } },
+            { "@type": "City", "name": "Yardley", "containedInPlace": { "@type": "AdministrativeArea", "name": "Bucks County, PA" } },
+            { "@type": "AdministrativeArea", "name": "Bucks County, PA" }
+        ],
+        "serviceType": ["Search Engine Marketing", "SEO Marketing", "Local SEO", "Digital Marketing", "Social Media Marketing"],
+        "sameAs": []
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "First Light Marketing — Search Engine Marketing Agency Bucks County",
+        "description": "Best SEO company in Bucks County providing search engine marketing services, SEO marketing, and digital marketing solutions for local businesses in Newtown, PA and surrounding areas.",
+        "url": "https://www.firstlightdigitalmarketing.com",
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "SEO & Search Engine Marketing Services",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Search Engine Marketing Bucks County" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Marketing Bucks County" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Local SEO Services" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Marketing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Marketing Strategy" } }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main Navigation">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo" aria-label="First Light Marketing Home">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="22" r="14" fill="#E8F1FD"/>
+                    <path d="M20 8V4M28 12l3-3M32 22h4M28 32l3 3M20 36v4M12 32l-3 3M8 22H4M12 12L9 9" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="20" cy="22" r="8" fill="#2563EB"/>
+                    <path d="M16 22l3 3 5-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>First Light Marketing</span>
+            </a>
+            <div class="nav-links">
+                <a href="seo-marketing-bucks-county.html">SEO Marketing</a>
+                <a href="search-engine-marketing-bucks-county.html">SEM</a>
+                <a href="local-seo-services.html">Local SEO</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="nav-cta">Free Consultation</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0l2.09 5.527L16 6.18l-4.09 3.58L13.18 16 8 12.527 2.82 16l1.27-6.24L0 6.18l5.91-.653z"/></svg>
+                        Bucks County's Top-Rated SEO &amp; Marketing Agency
+                    </div>
+                    <h1>Search Engine Marketing Agency in <span class="highlight">Bucks County</span></h1>
+                    <p>First Light Marketing delivers results-driven SEO marketing and search engine marketing services to businesses across Bucks County, PA. Based in Newtown, we help local businesses dominate search results and grow revenue.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">
+                            Get Free SEO Audit
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#services" class="btn-secondary">
+                            View Our Services
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-stat-grid">
+                        <div class="hero-stat">
+                            <span class="number">150+</span>
+                            <span class="label">Local Clients</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">97%</span>
+                            <span class="label">Retention Rate</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">3x</span>
+                            <span class="label">Avg. Traffic Growth</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">#1</span>
+                            <span class="label">Bucks County SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-inner">
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Google Certified Partner
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    5-Star Rated Agency
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Based in Newtown, PA
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Transparent Reporting
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Our Services
+                </div>
+                <h2>Search Engine Marketing Services in Bucks County</h2>
+                <p>As a full-service search engine marketing agency in Bucks County, we provide comprehensive SEO and digital marketing solutions tailored for local businesses.</p>
+            </div>
+            <div class="services-grid">
+                <!-- SEO Marketing -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                    </div>
+                    <h3>SEO Marketing</h3>
+                    <p>Our SEO marketing strategies in Bucks County are built to drive organic traffic, improve keyword rankings, and increase your visibility across search engines.</p>
+                    <a href="seo-marketing-bucks-county.html" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+                <!-- Search Engine Marketing -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3>Search Engine Marketing</h3>
+                    <p>Our search engine marketing services in Bucks County combine paid and organic strategies to maximize your online presence and deliver measurable ROI.</p>
+                    <a href="search-engine-marketing-bucks-county.html" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+                <!-- Local SEO -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Local SEO</h3>
+                    <p>Dominate the local search results in Newtown, PA and across Bucks County with our proven local SEO strategies including Google Business Profile optimization.</p>
+                    <a href="local-seo-services.html" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+                <!-- Social Media Marketing -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                    </div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Build your brand and engage your audience across Bucks County with data-driven social media marketing campaigns on Facebook, Instagram, and LinkedIn.</p>
+                    <a href="social-media-marketing.html" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+                <!-- Digital Marketing -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Digital Marketing Strategy</h3>
+                    <p>Comprehensive digital marketing services for Bucks County businesses, combining SEO, content marketing, PPC, and analytics for maximum growth.</p>
+                    <a href="digital-marketing-bucks-county.html" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+                <!-- Website Optimization -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3>Website Optimization</h3>
+                    <p>Improve your site speed, user experience, and conversion rates with our technical SEO and website optimization services designed for Bucks County businesses.</p>
+                    <a href="seo-services-bucks-county.html" class="service-link">
+                        Learn More
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section section-alt" id="why-us">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-content">
+                    <div class="section-label">Why Choose Us</div>
+                    <h2>The Best SEO Company in Bucks County</h2>
+                    <p>As one of the top search engine marketing companies in Bucks County, First Light Marketing brings deep local expertise and proven results to every campaign. We understand the Bucks County market because we live and work here.</p>
+                    <div class="why-list">
+                        <div class="why-item">
+                            <div class="why-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Local Market Expertise</h4>
+                                <p>Deep understanding of Bucks County's business landscape, from Newtown to Doylestown and beyond. We know your customers because they're our neighbors.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            </div>
+                            <div>
+                                <h4>Data-Driven SEO Strategies</h4>
+                                <p>Every SEO marketing decision is backed by analytics, competitive research, and real performance data — not guesswork.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div>
+                                <h4>Transparent Monthly Reporting</h4>
+                                <p>Clear, comprehensive reports that show exactly how your search engine marketing investment is performing with real metrics and ROI tracking.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h4>Dedicated Account Management</h4>
+                                <p>A personal SEO strategist who understands your business goals and is committed to your long-term growth in Bucks County.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-visual">
+                    <div class="why-visual-item">
+                        <div class="why-visual-num">01</div>
+                        <div class="why-visual-text">
+                            <h4>Comprehensive Site Audit</h4>
+                            <p>Full technical SEO and competitive analysis</p>
+                        </div>
+                    </div>
+                    <div class="why-visual-item">
+                        <div class="why-visual-num">02</div>
+                        <div class="why-visual-text">
+                            <h4>Custom Strategy Development</h4>
+                            <p>Tailored search engine marketing plan for your goals</p>
+                        </div>
+                    </div>
+                    <div class="why-visual-item">
+                        <div class="why-visual-num">03</div>
+                        <div class="why-visual-text">
+                            <h4>On-Page &amp; Off-Page Optimization</h4>
+                            <p>Content, links, and technical improvements</p>
+                        </div>
+                    </div>
+                    <div class="why-visual-item">
+                        <div class="why-visual-num">04</div>
+                        <div class="why-visual-text">
+                            <h4>Monitor, Report &amp; Refine</h4>
+                            <p>Continuous improvement and transparent results</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Process</div>
+                <h2>How Our SEO Services Company in Bucks County Delivers Results</h2>
+                <p>A proven, systematic approach to search engine marketing that consistently drives rankings, traffic, and revenue for Bucks County businesses.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-num">1</div>
+                    <h3>Discovery &amp; Audit</h3>
+                    <p>We analyze your website, competitors, and Bucks County market to identify opportunities and build a strategic foundation.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">2</div>
+                    <h3>Strategy &amp; Planning</h3>
+                    <p>Custom SEO marketing and search engine marketing strategy built around your specific business goals and target keywords.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">3</div>
+                    <h3>Implementation</h3>
+                    <p>On-page optimization, content creation, link building, and local SEO execution by our team of Bucks County SEO specialists.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">4</div>
+                    <h3>Growth &amp; Scale</h3>
+                    <p>Continuous monitoring, reporting, and optimization to compound your results and expand your reach across Bucks County.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section class="section section-alt" id="locations">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Service Areas</div>
+                <h2>Search Engine Marketing Companies Serving All of Bucks County</h2>
+                <p>Based in Newtown, PA, our SEO services company proudly serves businesses across every community in Bucks County.</p>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card featured">
+                    <div class="location-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div>
+                        <h3>Newtown, PA — Our Home Base</h3>
+                        <p>As a Newtown-based search engine marketing agency, we bring deep local connections and community knowledge to every SEO campaign we run in Bucks County.</p>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <h3>Doylestown, PA</h3>
+                        <p>SEO marketing and digital marketing services for businesses in the Bucks County seat.</p>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <h3>Yardley, PA</h3>
+                        <p>Strategic search engine marketing solutions helping Yardley businesses grow their online presence.</p>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <h3>Langhorne, PA</h3>
+                        <p>Local SEO and digital marketing services for Langhorne and lower Bucks County businesses.</p>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <h3>Levittown, PA</h3>
+                        <p>Full-service SEO services and search engine marketing for Levittown area businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Client Results</div>
+                <h2>What Bucks County Businesses Say About Our SEO Services</h2>
+                <p>Real results from real businesses across Bucks County who partnered with our search engine marketing agency.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"First Light Marketing transformed our online presence. Within 6 months, we went from page 3 to the top 3 results for our key search terms in Bucks County."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MR</div>
+                        <div class="testimonial-info">
+                            <div class="name">Michael R.</div>
+                            <div class="role">Restaurant Owner, Newtown PA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"The best SEO company in Bucks County, hands down. Their search engine marketing strategy doubled our leads in the first quarter. Incredible team to work with."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SK</div>
+                        <div class="testimonial-info">
+                            <div class="name">Sarah K.</div>
+                            <div class="role">Dental Practice, Doylestown PA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>"Their local SEO expertise is unmatched. Our Google Business Profile went from barely visible to dominating the map pack for Bucks County searches. Worth every penny."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JT</div>
+                        <div class="testimonial-info">
+                            <div class="name">James T.</div>
+                            <div class="role">HVAC Company, Yardley PA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-inner">
+                <h2>Ready to Dominate Search Results in Bucks County?</h2>
+                <p>Get a free SEO audit and discover how our search engine marketing agency in Bucks County can help your business grow. No contracts, no pressure — just results.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary">
+                        Get Your Free SEO Audit
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="tel:" class="btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call Us Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-label">Get In Touch</div>
+                    <h2>Start Your SEO Marketing Journey in Bucks County</h2>
+                    <p>Ready to work with the best SEO company in Bucks County? Contact our search engine marketing team for a free consultation and discover how we can help your business grow.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Office Location</h4>
+                                <p>Newtown, PA 18940<br>Bucks County, Pennsylvania</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p><a href="mailto:info@firstlightdigitalmarketing.com">info@firstlightdigitalmarketing.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday — Friday: 9am — 6pm<br>Saturday — Sunday: By Appointment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Request Your Free Consultation</h3>
+                    <form action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(215) 555-0123">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Website URL</label>
+                            <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="seo-marketing">SEO Marketing</option>
+                                <option value="search-engine-marketing">Search Engine Marketing</option>
+                                <option value="local-seo">Local SEO Services</option>
+                                <option value="social-media">Social Media Marketing</option>
+                                <option value="digital-marketing">Full Digital Marketing</option>
+                                <option value="website-optimization">Website Optimization</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Us About Your Goals</label>
+                            <textarea id="message" name="message" placeholder="What are your main marketing goals? What challenges are you facing?"></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Get My Free SEO Audit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo" style="color: white;">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+                            <circle cx="20" cy="22" r="14" fill="rgba(255,255,255,0.08)"/>
+                            <path d="M20 8V4M28 12l3-3M32 22h4M28 32l3 3M20 36v4M12 32l-3 3M8 22H4M12 12L9 9" stroke="#D4A853" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="22" r="8" fill="#D4A853"/>
+                            <path d="M16 22l3 3 5-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>First Light Marketing</span>
+                    </a>
+                    <p>Bucks County's trusted search engine marketing agency and SEO services company. Based in Newtown, PA, serving businesses across all of Bucks County.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="seo-marketing-bucks-county.html">SEO Marketing</a>
+                        <a href="search-engine-marketing-bucks-county.html">Search Engine Marketing</a>
+                        <a href="local-seo-services.html">Local SEO</a>
+                        <a href="social-media-marketing.html">Social Media Marketing</a>
+                        <a href="digital-marketing-bucks-county.html">Digital Marketing</a>
+                        <a href="seo-services-bucks-county.html">Website Optimization</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Service Areas</h4>
+                    <div class="footer-links">
+                        <a href="#locations">Newtown, PA</a>
+                        <a href="#locations">Doylestown, PA</a>
+                        <a href="#locations">Yardley, PA</a>
+                        <a href="#locations">Langhorne, PA</a>
+                        <a href="#locations">Levittown, PA</a>
+                        <a href="#locations">All Bucks County</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="#process">Our Process</a>
+                        <a href="#testimonials">Client Results</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="contact.html">Free SEO Audit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 First Light Marketing. All rights reserved. | Search Engine Marketing Agency, Bucks County PA</p>
+                <p>SEO Services Company Newtown, PA | Serving Bucks County Since Day One</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const toggle = document.querySelector('.mobile-toggle');
+        const links = document.querySelector('.nav-links');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card, .process-step, .testimonial-card, .location-card, .why-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
