@@ -611,6 +611,71 @@ img { max-width: 100%; display: block; }
 .timeline-content h4 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
 .timeline-content p { font-size: 0.9rem; color: var(--gray-500); line-height: 1.6; margin-bottom: 0; }
 
+/* ===== FAQ ACCORDION ===== */
+.faq-section { padding: 80px 0; }
+.faq-section .section-header { margin-bottom: 48px; }
+.faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; transition: var(--transition); }
+.faq-item:hover { border-color: var(--blue); }
+.faq-question {
+    width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 20px 24px; background: none; border: none; cursor: pointer;
+    font-family: inherit; font-size: 1rem; font-weight: 600; color: var(--gray-800);
+    text-align: left; line-height: 1.5; transition: var(--transition);
+}
+.faq-question:hover { color: var(--blue); }
+.faq-question:focus-visible { outline: 2px solid var(--blue); outline-offset: -2px; border-radius: var(--radius); }
+.faq-question svg { flex-shrink: 0; width: 20px; height: 20px; color: var(--blue); transition: transform 0.3s ease; }
+.faq-item[open] .faq-question svg { transform: rotate(180deg); }
+.faq-answer { padding: 0 24px 20px; font-size: 0.95rem; color: var(--gray-600); line-height: 1.8; }
+.faq-answer p { margin-bottom: 12px; }
+.faq-answer p:last-child { margin-bottom: 0; }
+
+/* ===== BLOG LISTING ===== */
+.blog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+.blog-card {
+    background: var(--white); border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg); overflow: hidden; transition: var(--transition);
+}
+.blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); border-color: transparent; }
+.blog-card-body { padding: 28px; }
+.blog-card-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 0.82rem; color: var(--gray-400); font-weight: 500; }
+.blog-card-tag {
+    display: inline-block; padding: 4px 10px; background: var(--sky); color: var(--blue);
+    border-radius: 6px; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+}
+.blog-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; line-height: 1.4; }
+.blog-card h3 a { color: var(--gray-800); transition: var(--transition); }
+.blog-card h3 a:hover { color: var(--blue); }
+.blog-card p { font-size: 0.9rem; color: var(--gray-500); line-height: 1.7; margin-bottom: 16px; }
+.blog-card .read-more {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 0.88rem; font-weight: 600; color: var(--blue); transition: var(--transition);
+}
+.blog-card .read-more:hover { gap: 10px; }
+.blog-card .read-more svg { width: 16px; height: 16px; }
+
+/* ===== BLOG POST ===== */
+.blog-post { max-width: 800px; margin: 0 auto; }
+.blog-post-meta { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; font-size: 0.88rem; color: var(--gray-400); }
+.blog-post h2 { font-size: 1.6rem; margin-top: 48px; margin-bottom: 16px; }
+.blog-post h3 { font-size: 1.25rem; margin-top: 36px; margin-bottom: 12px; }
+.blog-post p { font-size: 1.02rem; color: var(--gray-600); line-height: 1.85; margin-bottom: 20px; }
+.blog-post ul, .blog-post ol { padding-left: 24px; margin-bottom: 24px; }
+.blog-post li { font-size: 1rem; color: var(--gray-600); line-height: 1.8; margin-bottom: 8px; }
+.blog-post li::marker { color: var(--blue); }
+.blog-post blockquote {
+    border-left: 4px solid var(--gold); padding: 20px 24px; margin: 32px 0;
+    background: var(--gray-50); border-radius: 0 var(--radius) var(--radius) 0;
+    font-size: 1.02rem; color: var(--gray-700); line-height: 1.7; font-style: italic;
+}
+.blog-post .key-takeaway {
+    background: var(--sky); border: 1px solid rgba(37,99,235,0.15); border-radius: var(--radius);
+    padding: 24px; margin: 32px 0;
+}
+.blog-post .key-takeaway h4 { font-size: 0.95rem; font-weight: 700; color: var(--blue); margin-bottom: 8px; }
+.blog-post .key-takeaway p { margin-bottom: 0; font-size: 0.95rem; }
+
 @media (max-width: 768px) {
     .page-hero h1 { font-size: 2rem; }
     .content-grid { grid-template-columns: 1fr; }
@@ -618,4 +683,7 @@ img { max-width: 100%; display: block; }
     .stat-row { grid-template-columns: 1fr; }
     .contact-page-grid { grid-template-columns: 1fr; }
     .team-grid { grid-template-columns: 1fr; }
+    .blog-grid { grid-template-columns: 1fr; }
+    .faq-question { padding: 16px 20px; font-size: 0.95rem; }
+    .faq-answer { padding: 0 20px 16px; }
 }
